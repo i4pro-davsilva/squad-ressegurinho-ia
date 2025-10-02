@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__hover",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__click",
+      "WebFetch(domain:www.i4pro.com.br)",
+      "mcp__chrome-devtools__new_page",
+      "mcp__chrome-devtools__evaluate_script",
+      "Bash(curl -o src/assets/i4pro-logo.svg https://www.i4pro.com.br/img/erp_logo.svg)",
+      "mcp__chrome-devtools__select_page",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__chrome-devtools__resize_page"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

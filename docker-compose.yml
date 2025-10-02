@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  postgres-agente-ia:
+    image: pgvector/pgvector:pg15
+    container_name: postgres-agente-ia
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: agente_ia
+      POSTGRES_PASSWORD: hudweihg78943uihqw$#
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+# String de conexão para este serviço Postgres:
+# postgresql+psycopg://agente_ia:hudweihg78943uihqw$#@localhost:5432/postgres
