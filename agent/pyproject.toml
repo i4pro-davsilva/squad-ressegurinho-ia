@@ -12,6 +12,7 @@ dependencies = [
     "openai>=1.0.0",
     "pgvector>=0.4.1",
     "psycopg[binary]>=3.2.10",
+    "pymssql>=2.3.7",
     "pypdf>=5.1.0",
     "python-dotenv>=1.0.0",
     "sqlalchemy>=2.0.43",

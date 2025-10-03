@@ -10,6 +10,8 @@ import asyncio
 from agno.os import AgentOS
 from agno.os.interfaces.agui import AGUI
 from tools.criar_cotacao import criar_cotacao
+from tools.consulta_produto import consulta_produto, buscar_produto_por_nome
+from tools.buscar_codigo_produto import buscar_codigo_produto
 from config.agent_instructions import (
     AGENT_RAG_INSTRUCTIONS,
     AGENT_CRIADOR_MASSAS_INSTRUCTIONS
@@ -65,6 +67,9 @@ agent_rag = Agent(
 
 tools = [
     criar_cotacao,
+    consulta_produto,
+    buscar_produto_por_nome,
+    buscar_codigo_produto,
 ]
 
 agent_criador_massas = Agent(
@@ -78,6 +83,7 @@ agent_criador_massas = Agent(
     debug_mode=True,
     tools=tools
 )
+
 
 
 # Configurar AgentOS
