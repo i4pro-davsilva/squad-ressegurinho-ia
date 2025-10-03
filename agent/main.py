@@ -25,23 +25,23 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY não configurada no arquivo .env")
 
-db_url = os.getenv("DATABASE_URL")
-if not db_url:
-    raise ValueError("DATABASE_URL não configurada no arquivo .env")
+# db_url = os.getenv("DATABASE_URL")
+# if not db_url:
+#     raise ValueError("DATABASE_URL não configurada no arquivo .env")
 
-db = PostgresDb(
-    db_url=db_url,
-    knowledge_table="knowledge_contents",
-)
+# db = PostgresDb(
+#     db_url=db_url,
+#     knowledge_table="knowledge_contents",
+# )
 
-# Criar base de conhecimento
-knowledge = Knowledge(
-    contents_db=db,
-    vector_db=PgVector(
-        table_name="pdf_knowledge",
-        db_url=db_url,
-    )
-)
+# # Criar base de conhecimento
+# knowledge = Knowledge(
+#     contents_db=db,
+#     vector_db=PgVector(
+#         table_name="pdf_knowledge",
+#         db_url=db_url,
+#     )
+# )
 
 
 model = OpenAIChat(
@@ -58,7 +58,6 @@ agent_rag = Agent(
     markdown=True,
     add_history_to_context=True,
     model=model,
-    knowledge=knowledge,
     instructions=AGENT_RAG_INSTRUCTIONS,
     debug_mode=True,
 )
@@ -78,7 +77,6 @@ agent_criador_massas = Agent(
     markdown=True,
     add_history_to_context=True,
     model=model,
-    knowledge=knowledge,
     instructions=AGENT_CRIADOR_MASSAS_INSTRUCTIONS,
     debug_mode=True,
     tools=tools

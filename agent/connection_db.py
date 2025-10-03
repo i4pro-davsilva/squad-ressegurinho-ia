@@ -73,7 +73,7 @@ class SQLServerConnection:
     def get_version(self):
         """Retorna a versão do SQL Server"""
         return self.execute_query("SELECT @@VERSION")
-    
+
     def close_connection(self):
         """Fecha a conexão com o banco de dados"""
         try:
