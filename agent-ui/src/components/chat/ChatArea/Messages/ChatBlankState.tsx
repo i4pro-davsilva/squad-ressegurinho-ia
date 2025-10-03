@@ -118,7 +118,7 @@ const ChatBlankState = () => {
         >
           <div className="flex items-center justify-center gap-x-2 whitespace-nowrap font-medium">
             <span className="flex items-center font-[600] bg-gradient-to-r from-i4pro-turquoise to-i4pro-orange bg-clip-text text-transparent">
-              Agente de IA
+              Squad Ressegurinho
             </span>
             <span className="inline-flex translate-y-[10px] scale-125 items-center transition-transform duration-200 hover:rotate-6 hover:scale-150">
               <Link

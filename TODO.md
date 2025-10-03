@@ -42,23 +42,10 @@
 - [ ] **Tool: Consultar Apólices/Contratos**
   - [ ] Query para contratos ativos
   - [ ] Query para histórico de contratos
-- [ ] **Tool: Consultar Resseguradores**
-  - [ ] Query para lista de resseguradores
-  - [ ] Query para capacidades por ressegurador
-- [ ] **Tool: Consultar Tarifação**
-  - [ ] Query para tabelas de prêmios
-  - [ ] Query para fatores de risco
 
 ---
 
 ## 🔧 **Melhorias Técnicas**
-
-### 4. **Interface e UX**
-- [ ] Implementar indicador de "digitando" durante processamento
-- [ ] Adicionar botões de ação rápida (sim/não, confirmar/cancelar)
-- [ ] Melhorar tratamento de erros na UI
-- [ ] Implementar upload de arquivos (documentos, planilhas)
-- [ ] Adicionar funcionalidade de exportar conversas
 
 ### 5. **Base de Conhecimento RAG**
 - [ ] Atualizar documentos na pasta `base_conhecimento/`
@@ -74,56 +61,6 @@
 - [ ] Criar tool para validação de dados regulatórios
 - [ ] Implementar tool para cálculo de comissões
 
-### 7. **Monitoramento e Logs**
-- [ ] Implementar logging estruturado
-- [ ] Adicionar métricas de performance
-- [ ] Criar dashboard de monitoramento
-- [ ] Implementar alertas para erros críticos
-- [ ] Adicionar rastreamento de conversas
-
----
-
-## 📊 **Funcionalidades Avançadas**
-
-### 8. **Integrações Externas**
-- [ ] Integração com APIs de cotação de resseguro
-- [ ] Conexão com sistemas de rating externos
-- [ ] Integração com correio eletrônico
-- [ ] API para integração com outros sistemas I4Pro
-
-### 9. **Segurança e Compliance**
-- [ ] Implementar autenticação de usuários
-- [ ] Adicionar controle de acesso por perfil
-- [ ] Implementar audit log de operações
-- [ ] Validar compliance com regulamentações SUSEP
-- [ ] Adicionar criptografia de dados sensíveis
-
-### 10. **Performance e Escalabilidade**
-- [ ] Otimizar queries do banco de dados
-- [ ] Implementar cache Redis para respostas frequentes
-- [ ] Configurar load balancing
-- [ ] Implementar processamento assíncrono
-- [ ] Otimizar uso de tokens dos LLMs
-
----
-
-## 🧪 **Testes e Qualidade**
-
-### 11. **Testes Automatizados**
-- [ ] Testes unitários para tools
-- [ ] Testes de integração com BD
-- [ ] Testes end-to-end da interface
-- [ ] Testes de carga e performance
-- [ ] Testes de regressão para prompts
-
-### 12. **Validação com Usuários**
-- [ ] Criar ambiente de homologação
-- [ ] Definir casos de teste com especialistas
-- [ ] Coletar feedback de operadores I4Pro
-- [ ] Ajustar baseado no feedback recebido
-- [ ] Documentar casos de uso validados
-
----
 
 ## 📚 **Documentação**
 
