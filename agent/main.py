@@ -13,7 +13,7 @@ from tools.criar_cotacao import criar_cotacao
 from tools.consulta_produto import consulta_produto, buscar_produto_por_nome
 from tools.buscar_codigo_produto import buscar_codigo_produto
 from config.agent_instructions import (
-    AGENT_RAG_INSTRUCTIONS,
+    AGENT_CONCIERGE_INSTRUCTIONS,
     AGENT_CRIADOR_MASSAS_INSTRUCTIONS
 )
 
@@ -58,7 +58,7 @@ agent_rag = Agent(
     markdown=True,
     add_history_to_context=True,
     model=model,
-    instructions=AGENT_RAG_INSTRUCTIONS,
+    instructions=AGENT_CONCIERGE_INSTRUCTIONS,
     debug_mode=True,
 )
 
